@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birla Planetarium</title>
+    <style>
+        body {
+            font-family: 'Papyrus';
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('https://assets.gqindia.com/photos/648185e00129d966909de09a/16:9/w_1920,c_limit/Kolkata-City-Guide_07.jpg');
+        }
+
+        .mid {
+            
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+            
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            margin: 40px;
+            font-size: 25px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: yellow;
+            box-shadow: 8px 8px 8px 0px rgb(29, 86, 177);
+        }
+
+        .container {
+            border: 2px solid rgb(39, 81, 173);
+            width: 1700px;
+            height: 700px;
+            border-radius: 30px;
+            margin: 70px 80px;
+            padding: 30px;
+            box-shadow: 8px 8px 10px 0px rgb(69, 117, 193);
+            text-shadow: 3px 2px 4px yellow;
+
+        }
+
+        .container ul li a
+        {
+            text-decoration: none;
+        }
+
+        h1, h2
+        {
+            color: yellow;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+        }
+
+        h1:hover
+        {
+            color: rgb(50, 50, 255);
+            
+        }
+
+        h2:hover
+        {
+            color: rgb(133, 190, 237);
+        }
+
+        #image1
+        {
+            position: absolute;
+            top: 450px;
+            left: 200px;
+        }
+
+        #image2
+        {
+            position: absolute;
+            top: 450px;
+            left: 1015px;
+        }
+        
+        img
+        {
+            width: 700px;
+            height: 400px;
+            border-radius: 15px;
+            border: 1px solid rgb(39, 81, 173);
+            box-shadow: 5px 5px 3px 0px rgb(69, 117, 193);
+        }
+
+        img:hover
+        {
+            border: 3px solid rgb(39, 81, 173);
+            box-shadow: 10px 10px 8px 0px rgb(69, 117, 193);
+        }
+
+        
+        footer {
+            
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="heritage.html" class="active">Heritage</a></li>
+                <li><a href="hotel.html" target = "_blank">Hotel Booking</a></li>
+                <li><a href="gallery.html" target = "_blank">Gallery</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Birla Planetarium</h1>
+        <h2>The Birla Planetarium in Kolkata, also known as Taramandal, is one of the largest planetariums in Asia, inaugurated in 1963 by Jawaharlal Nehru.<br>The planetarium offers daily shows on astronomy and celestial events in various languages, making it a popular destination for both students and tourists.<br>Designed in a classical Indian style, resembling the famous Sanchi Stupa, It is a hub of scientific learning and exploration, and a visit here provides a fascinating insight into the world of stars, planets, and the universe.</h2>
+    </div>
+    <img src="https://planetariums-database.org/images/planetariums/calcuta.jpg" alt="Image1" id="image1">
+    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/7a/94.jpg" alt="Image2" id="image2">
+    <footer>
+        <p>&copy; 2024 Kolkata Tourism (By Shrestha)</p>
+    </footer>
+</body>
+</html>

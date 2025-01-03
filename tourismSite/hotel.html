@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <style>
+        body {
+            font-family: 'Papyrus';
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('https://assets.gqindia.com/photos/648185e00129d966909de09a/16:9/w_1920,c_limit/Kolkata-City-Guide_07.jpg');
+        }
+
+        .mid {
+            
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+            
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            margin: 40px;
+            font-size: 25px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: yellow;
+            box-shadow: 8px 8px 8px 0px rgb(29, 86, 177);
+        }
+
+        .container {
+            border: 2px solid rgb(39, 81, 173);
+            width: 1700px;
+            height: 700px;
+            border-radius: 30px;
+            margin: 70px 80px;
+            padding: 30px;
+            box-shadow: 8px 8px 10px 0px rgb(29, 86, 177);
+            text-shadow: 3px 2px 4px yellow;
+
+        }
+
+        .btn {
+            font-family: 'Papyrus';
+            padding: 5px 3px;
+            margin: 12px 10px;
+            color: white;
+            background-color: rgb(29, 86, 177);
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            box-shadow: 5px 5px 8px 0px rgb(84, 84, 27);
+
+        }
+
+        .btn:hover {
+            color: #fff;
+            background-color: rgb(201, 201, 149);
+            box-shadow: 8px 8px 8px 0px rgb(29, 86, 177);
+        }
+
+        .formin:hover
+        {
+            color: yellow;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+        }
+
+        .checkbox
+        {
+            margin: 20px 0px;
+            font-size: 20px;
+        }
+
+        .checkbox:hover
+        {
+            color: yellow;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+        }
+
+        h2
+        {
+            position: absolute;
+            top: 200px;
+            right: 370px;
+            font-size: 35px;
+            
+        }
+
+        #img1
+        {
+            
+            position: absolute;
+            top: 300px;
+            right: 600px;
+            
+        }
+
+        #img2
+        {
+            
+            position: absolute;
+            top: 300px;
+            right: 200px;
+            
+        }
+
+        #img3
+        {
+            
+            position: absolute;
+            top: 600px;
+            right: 600px;
+        }
+
+        #img4
+        {
+            
+            position: absolute;
+            top: 600px;
+            right: 200px;
+        }
+
+        img
+        {
+            width: 300px;
+            border-radius: 15px;
+            border: 1px solid rgb(39, 81, 173);
+            box-shadow: 5px 5px 3px 0px rgb(69, 117, 193);
+            padding: 20px;
+        }
+
+        img:hover
+        {
+            border: 3px solid rgb(39, 81, 173);
+            box-shadow: 10px 10px 8px 0px rgb(69, 117, 193);
+        }
+        
+        footer {
+            
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="homePage.html" >Home</a></li>
+                <li><a href="heritage.html" target = "_blank">Heritage</a></li>
+                <li><a href="hotel.html" class="active">Hotel Booking</a></li>
+                <li><a href="gallery.html" target = "_blank">Gallery</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Your Search for comfort Ends Here!
+        </h1>
+        <form action="noaction.php">
+            <div class="formin">
+                Name: <input type="text" name="myName" id="name" placeholder="Enter Your Name" class="btn">
+            </div>
+            <div class="formin">
+                Email: <input type="email" name="myEmail" id="mail" placeholder="Enter Email Address" class="btn">
+            </div>
+            <div class="formin">
+                Mobile Number: <input type="number" name="myNumber" id="number" placeholder="Your Mobile Number"
+                    class="btn">
+            </div>
+            <div class="formin">
+                Address: <input type="text" name="myAddress" id="address" placeholder="Enter Your Address" class="btn">
+            </div>
+            <div class="formin">
+                Check-in Date: <input type="date" name="myCheckin" id="checkin" class="btn">
+            </div>
+            <div class="formin">
+                Check-out Date: <input type="date" name="myCheckout" id="checkout" class="btn">
+            </div>
+            <div class="formin">
+                Room Type: <select name="FavDept" id="dept" placeholder="Room Required" class="btn">
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                    <option value="sharing">Sharing</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                Do you Agree to our Terms and Condition and giving Access of your information to us?*<input type="checkbox"
+                    name="myAgreement" id="check" class="btn" checked>
+            </div>
+            <div class="apply">
+                <input type="submit" value="Book Now" class="btn">
+                <input type="reset" value="Reset All" class="btn">
+            </div>
+        </form>
+        <h2>Images of your Dream Stay</h2>
+        <div class="image">
+            <img src="https://cache.marriott.com/content/dam/marriott-renditions/CCULR/cculr-exterior-3849-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*" alt="Image1" id="img1">
+            <img src="https://cache.marriott.com/content/dam/marriott-renditions/CCULR/cculr-king-guestroom-9248-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*" alt=""Image2 id="img2">
+            <img src="https://cache.marriott.com/is/image/marriotts7prod/lc-cculr-guest-room-12368-83445:Wide-Hor?wid=375&fit=constrain" alt="Image3" id="img3">
+            <img src="https://cache.marriott.com/content/dam/marriott-renditions/CCULR/cculr-guest-bathroom-9249-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*" alt="Image4" id="img4">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kolkata Tourism (By Shrestha)</p>
+    </footer>
+</body>
+</html>
